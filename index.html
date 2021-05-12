@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>download | a song</title>
+
+	<style>
+		*{
+			box-sizing: border-box;
+			padding: 0; margin: 0;
+		}
+
+		article{
+			margin-bottom: 10rem;
+		}
+
+		header{
+			background-color: #333; height: 20vh;
+			overflow: hidden; display: flex; flex-flow: row nowrap;
+			justify-content: space-between;
+			border-bottom: 4px solid gray; padding: 1rem .8rem;
+			position: fixed; top: 0; width: 100%;
+		}
+		header>div{
+			margin: auto;
+		}
+
+		h1{
+			text-transform: uppercase;
+			font-weight: 600;
+			font-family: Vector, Texturina, sans-serif;
+			margin: 12rem 1rem 2rem 1rem; text-align: center;
+		}
+
+		p{
+			font: 1.1rem/1.6 Roborto, sans-serif;
+		}
+		audio{
+			width: 92%; margin: auto;;
+		}
+
+		img{
+			width: 64%; fill: white;
+		}
+		svg{fill: white;}
+
+		.song{
+			margin: 2rem 1rem 2rem;
+		}
+
+		.play a{
+			display: inline-block;
+			text-decoration: none;
+			color: #fff;
+			padding: .4rem 1rem;
+			background: black;
+		}
+
+		.song{
+			max-height: 400px; width: 45%;
+			background-color: #eee; padding: 1rem;
+			border-radius: 8px; border-radius: 22px;
+			 margin-bottom: 8rem;
+		}
+
+		.links{
+			width: 64%; margin: auto;
+
+		}
+
+		footer{
+			background-color: #333; height: 20vh;
+			overflow: hidden; display: flex; flex-flow: row nowrap;
+			justify-content: space-between;
+			border-top: 4px solid gray; padding: 1rem .8rem; position: fixed; bottom: 0;
+		}
+
+		@media screen and (max-width: 300px){
+			h1, .song, p{
+				width: 85%; margin: auto; text-align: center;
+				margin-bottom: : .2rem;
+			}
+
+			h1{
+				font-size: 1.4rem; margin-bottom: 2rem;
+				margin-top: 8rem;
+			}
+
+			p{
+				margin-bottom: 1rem;
+			}
+
+			small{
+				font: .8rem/1.2 'Comic Sans MS', arial, sans-serif;
+				color: indianred;
+			}
+
+			footer{
+				flex-flow: column nowrap;
+				/*position: fixed;*/
+				align-items: center;
+				text-align: center;
+			}
+
+			footer a{
+				color: white; text-decoration: none;
+				display: inline-block;
+				padding: .4rem 0;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="https://masalex8.wordpress.com"><img src="./smile.svg" alt="masalex8 logo"></a>
+		</div>
+		<div class="menu">
+			<a href=""><img src="./github.svg" alt="a menu icon from icon fonts"></a>
+		</div>
+		
+
+	</header>
+	<h1>click download below to download</h1>
+
+	<article>
+		<p>Vibes by Kimbo boy. He sings about people and lovers in their honey moon or fights.
+		It would do you less harm if your to try downloading the song below.</p>
+
+		<div class="song">
+			<p>
+				<span>Am not shit - KIMBO boy</span> Legit media
+			</p>
+			<div class="play">
+				<audio src="./unconditional.mp3" controls>unconditional by dj shiru and Kelcy</audio>
+				<div class="links">
+					<a href="./unconditional.mp3" download>download</a>
+					<a href="">share</a>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<footer>
+		<a href="https://masalex8.wordpress.com" title="masalex8 website">visit masalex8</a>
+		<a href="https://github.com/masalex-willock/" title="masalex8 website">masalex8 github</a>
+		<small>Copyright &copy;, 2021 Masalex8; All rights reserved.</small>
+	</footer>
+</body>
+</html>
