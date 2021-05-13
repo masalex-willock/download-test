@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+  padding: 0; margin: 0;
+}
+
+article{
+  margin-bottom: 10rem;
+}
+
+header{
+  background-color: #333; height: 20vh;
+  overflow: hidden; display: flex; flex-flow: row nowrap;
+  justify-content: space-between;
+  border-bottom: 4px solid gray; padding: 1rem .8rem;
+  position: fixed; top: 0; width: 100%;
+}
+header>div{
+  margin: auto;
+}
+
+h1{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: Vector, Texturina, sans-serif;
+  margin: 12rem 1rem 2rem 1rem; text-align: center;
+}
+
+p{
+  font: 1.1rem/1.6 Roborto, sans-serif;
+}
+audio{
+  width: 92%; margin: auto;;
+}
+
+img{
+  width: 64%; fill: white;
+}
+svg{fill: white;}
+
+.song{
+  margin: 2rem 1rem 2rem;
+}
+
+.play a{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: .4rem 1rem;
+  background: black;
+}
+
+.song{
+  max-height: 400px; width: 45%;
+  background-color: #eee; padding: 1rem;
+  border-radius: 8px; border-radius: 22px;
+   margin-bottom: 8rem;
+}
+
+.links{
+  width: 64%; margin: auto;
+
+}
+
+footer{
+  background-color: #333; height: 20vh;
+  overflow: hidden; display: flex; flex-flow: row nowrap;
+  justify-content: space-between;
+  border-top: 4px solid gray; padding: 1rem .8rem; position: fixed; bottom: 0;
+}
+
+@media screen and (max-width: 300px){
+  h1, .song, p{
+    width: 85%; margin: auto; text-align: center;
+    margin-bottom: : .2rem;
+  }
+
+  h1{
+    font-size: 1.4rem; margin-bottom: 2rem;
+    margin-top: 8rem;
+  }
+
+  p{
+    margin-bottom: 1rem;
+  }
+
+  small{
+    font: .8rem/1.2 'Comic Sans MS', arial, sans-serif;
+    color: indianred;
+  }
+
+  footer{
+    flex-flow: column nowrap;
+    /*position: fixed;*/
+    align-items: center;
+    text-align: center;
+  }
+
+  footer a{
+    color: white; text-decoration: none;
+    display: inline-block;
+    padding: .4rem 0;
+  }
+}
