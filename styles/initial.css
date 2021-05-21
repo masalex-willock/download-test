@@ -1,103 +1,104 @@
+/* THE MAIN AREAS */
 *{
-  box-sizing: border-box;
-  padding: 0; margin: 0;
+  padding: 0; margin: 0; box-sizing: border-box;
+  font: 1.1rem/1.6 Franklin, Helvetica, sans-serif;
 }
 
-article{
-  margin-bottom: 10rem;
+body{
+  background: #d4d4d4;
 }
 
+/* MAIN TAGS */
 header{
-  background-color: #333; height: 20vh;
-  overflow: hidden; display: flex; flex-flow: row nowrap;
-  justify-content: space-between;
-  border-bottom: 4px solid gray; padding: 1rem .8rem;
-  position: fixed; top: 0; width: 100%;
-}
-header>div{
-  margin: auto;
+  
 }
 
-h1{
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: Vector, Texturina, sans-serif;
-  margin: 12rem 1rem 2rem 1rem; text-align: center;
-}
-
-p{
-  font: 1.1rem/1.6 Roborto, sans-serif;
-}
-audio{
-  width: 92%; margin: auto;;
-}
-
-img{
-  width: 64%; fill: white;
-}
-svg{fill: white;}
-
-.song{
-  margin: 2rem 1rem 2rem;
-}
-
-.play a{
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  padding: .4rem 1rem;
-  background: black;
-}
-
-.song{
-  max-height: 400px; width: 45%;
-  background-color: #eee; padding: 1rem;
-  border-radius: 8px; border-radius: 22px;
-   margin-bottom: 8rem;
-}
-
-.links{
-  width: 64%; margin: auto;
+main{
 
 }
 
 footer{
-  background-color: #333; height: 20vh;
-  overflow: hidden; display: flex; flex-flow: row nowrap;
-  justify-content: space-between;
-  border-top: 4px solid gray; padding: 1rem .8rem; position: fixed; bottom: 0;
+  padding-top: 2rem;
 }
 
-@media screen and (max-width: 300px){
-  h1, .song, p{
-    width: 85%; margin: auto; text-align: center;
-    margin-bottom: : .2rem;
-  }
+h1{
+  font: bold 1.5rem Rockwell;margin: .4rem .2rem;
+}
+h2{
+  font: bold 1.4rem Rockwell;margin: .4rem .2rem;
+}
+h3{
+  font: bold 1.3rem Rockwell;margin: .4rem .2rem;
+}
 
-  h1{
-    font-size: 1.4rem; margin-bottom: 2rem;
-    margin-top: 8rem;
-  }
+p{
+  margin: .4rem 0;
+}
 
-  p{
-    margin-bottom: 1rem;
-  }
+a{
+  text-decoration: none; color: #021db9;
+}
 
-  small{
-    font: .8rem/1.2 'Comic Sans MS', arial, sans-serif;
-    color: indianred;
-  }
+hr{
+  margin-top: 2rem; color: #d4d4d4;
+}
 
-  footer{
-    flex-flow: column nowrap;
-    /*position: fixed;*/
-    align-items: center;
-    text-align: center;
-  }
+small{
+  font-variant-caps: small-caps;
+  font: 400 italic .8rem 'Kristen ITC', cursive, sans-serif;
+}
 
-  footer a{
-    color: white; text-decoration: none;
-    display: inline-block;
-    padding: .4rem 0;
-  }
+article{
+  /* margin: 2rem 1rem 1rem; */
+}
+
+blockquote{
+  width: 80%; text-align: right; box-shadow: 4px 0 12px -6px #333;
+  padding: 1rem 2rem; margin-left: auto;
+}
+
+button{
+  border: none; background-color: black; color: #d4d4d4;
+  padding: .2rem .8rem;
+}
+
+/* SUPORTED MAINS */
+button>a{
+  color: #e1e1e1;
+}
+
+button.btn2{
+  border-radius: 30px; border: currentColor solid 1px;
+  background-color: unset; color: #021db9;
+}
+
+/* media */
+audio{
+  max-width: 90%; margin: auto;
+}
+
+
+/* classes global */
+.file{
+  background-color: rgb(153, 149, 149);
+  padding: .8rem .4rem; text-align: center;
+  display: flex; flex-flow: column nowrap; justify-content: center;
+}
+
+.file>*+*{
+  padding: .2rem 0;
+}
+
+.file small{
+  color: rgb(80, 80, 80); font-size: medium;
+  /* flex: 1 0 auto; */
+}
+
+.file>div:first-of-type{
+  display: flex; justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.file>div:first-of-type>span:first-of-type{
+  color: rgb(53, 53, 53);
 }

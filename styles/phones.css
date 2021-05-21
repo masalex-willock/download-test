@@ -1,0 +1,47 @@
+/* THE MAIN SECTIONS */
+
+footer{
+  height: auto; width: 100%;
+  display: flex; flex-flow: column nowrap; align-items: center; justify-content: space-between;
+  background: rgb(168, 168, 168);
+
+  padding-bottom: 2.4rem;
+}
+
+header{
+  height: 6rem; width: 100%; padding: 0 1rem;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgb(168, 168, 168);
+}
+
+
+main{
+  width: 90%; margin: auto;
+}
+
+
+/* WITH SOME ASSOCIATIONS - ONLY MAIN */
+header img{
+  height: auto; width: 32%;
+}
+
+.hero h3{
+  padding-top: 2rem;
+}
+.hero p{
+  padding: 1rem .4rem;
+}
+
+/* images styles */
+img{
+  max-height: 100%; max-width: 100%;
+}
+
+.file{
+  width: 90%; margin: auto;
+}
+
+
+.file+.file{
+  margin-top: .4rem;
+}
