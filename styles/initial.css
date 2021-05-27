@@ -49,7 +49,7 @@ small{
 }
 
 article{
-  /* margin: 2rem 1rem 1rem; */
+  margin: 2rem 1rem 1rem;
 }
 
 blockquote{
@@ -101,4 +101,10 @@ audio{
 
 .file>div:first-of-type>span:first-of-type{
   color: rgb(53, 53, 53);
+}
+
+/* other classes */
+.artist .file button{
+  min-width: 200px; max-width: 80%;
+  margin: .2rem auto;
 }

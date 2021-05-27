@@ -12,6 +12,7 @@ header{
   height: 6rem; width: 100%; padding: 0 1rem;
   display: flex; align-items: center; justify-content: space-between;
   background: rgb(168, 168, 168);
+  position: relative;
 }
 
 
@@ -21,9 +22,49 @@ main{
 
 
 /* WITH SOME ASSOCIATIONS - ONLY MAIN */
+
+/* the dropdown menu */
+header nav{
+  position: absolute; right: 1rem; top: 1.2rem; cursor: pointer;
+}
+
+.humb{
+  width: 2.2rem; height: .2rem; background: #000; position: relative; top: 2rem;
+}
+
+  .humb::before, .humb::after{
+    content: ''; position: absolute;
+    width: 2rem; height: .2rem; background: inherit;
+  }
+
+  .humb::before{
+    top: .6rem;
+  }
+
+  .humb::after{
+    top: -0.6rem;
+  }
+
+header nav ul a{
+  color: #d4d4d4;font-size: 1.5rem; display: inline-block;padding: .4rem;
+}
+header nav ul{color: #747474;
+  position: absolute; right: 0; top: 3.2rem; background: #000; min-width: 320px; text-align: center; padding: 1rem 2rem;
+  display: none;
+}
+
+/* header nav:hover ul{
+  display: block;
+} */
+
+
 header img{
   height: auto; width: 32%;
 }
+
+  header ul{
+    list-style: none;
+  }
 
 .hero h3{
   padding-top: 2rem;
@@ -44,4 +85,12 @@ img{
 
 .file+.file{
   margin-top: .4rem;
+}
+
+
+
+@media  screen and (max-width:325px) {
+  .file div:first-of-type{
+    flex-direction: column;
+  }
 }

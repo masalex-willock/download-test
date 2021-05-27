@@ -14,15 +14,33 @@
 	<link rel="stylesheet" href="./styles/initial.css">
 	<title>download | a song</title>
 
+	<!-- scripts -->
+	<script src="./scripts/main.js" defer></script>
+
 </head>
 <body>
 	<header>
 		<div class="logo">
 			<a href="https://masalex8.wordpress.com"><img src="./media/images/legitMedia.png" alt="legit media logo"></a>
+			<small style="display: block;">LEGIT MEDIA</small>
 		</div>
-		<div class="menu">
-			<a href=""><img src="./media/images/github.png" alt="a menu icon from icon fonts"></a>
-		</div>
+		<nav class="menu">
+			<div class="dropdown humb" id="dropdown"></div>
+			<ul id="elems">
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li>
+					<span class="">media</span>
+					<!-- <ul>
+						<li><a href="">Audio</a></li>
+						<li><a href="">video</a></li>
+						<li><a href="">Images</a></li>
+					</ul> -->
+				</li>
+				<li><a href="">Artists</a></li>
+				<li><a href="">Contact</a></li>
+			</ul> 
+		</nav>
 	</header>
 
 	<main>
@@ -74,7 +92,7 @@
 					<audio src="./media/audio/Chiki dance - Legit media all stars.mp3" controls></audio>
 					<div>
 						<button>
-							<span><!--img--></span><a href="./media/audio/baby wange - mike reins.mp3" download>Download</a>
+							<span><!--img--></span><a href="./media/audio/Chiki dance - Legit media all stars.mp3" download>Download</a>
 						</button>
 						<button>
 							<span><!--img--></span><span>Share</span>
@@ -93,7 +111,7 @@
 					<audio src="./media/audio/Fafagula - O2 feat Royal Ivan.mp3" controls></audio>
 					<div>
 						<button>
-							<span><!--img--></span><a href="./media/audio/baby wange - mike reins.mp3" download>Download</a>
+							<span><!--img--></span><a href="./media/audio/Fafagula - O2 feat Royal Ivan.mp3" download>Download</a>
 						</button>
 						<button>
 							<span><!--img--></span><span>Share</span>
@@ -112,7 +130,7 @@
 					<audio src="./media/audio/Lord i know - oxy gen feat delta fika.mp3" controls></audio>
 					<div>
 						<button>
-							<span><!--img--></span><a href="./media/audio/baby wange - mike reins.mp3" download>Download</a>
+							<span><!--img--></span><a href="./media/audio/Lord i know - oxy gen feat delta fika.mp3" download>Download</a>
 						</button>
 						<button>
 							<span><!--img--></span><span>Share</span>
@@ -131,7 +149,7 @@
 					<audio src="./media/audio/zig zag - oxy gen feat delta fika.mp3" controls></audio>
 					<div>
 						<button>
-							<span><!--img--></span><a href="./media/audio/baby wange - mike reins.mp3" download>Download</a>
+							<span><!--img--></span><a href="./media/audio/zig zag - oxy gen feat delta fika.mp3" download>Download</a>
 						</button>
 						<button>
 							<span><!--img--></span><span>Share</span>
@@ -150,7 +168,7 @@
 					<audio src="./media/audio/Nze kabaka - sweet nyc.mp3" controls></audio>
 					<div>
 						<button>
-							<span><!--img--></span><a href="./media/audio/baby wange - mike reins.mp3" download>Download</a>
+							<span><!--img--></span><a href="./media/audio/Nze kabaka - sweet nyc.mp3" download>Download</a>
 						</button>
 						<button>
 							<span><!--img--></span><span>Share</span>
@@ -206,10 +224,18 @@
 
 	</main>
 
+	<article>
+		<p>
+			Like any big company or more accurately big company to be, It's our obligation to make sure you and us are always on the right side of Occasions. We have details on how to use and distribute content from this website.
+			<button class="btn2"><a href="./pages/terms.html" style="color: #000b70;">Visit Privacy Policy Page</a></button>
+		</p>
+	</article>
+
 	<footer>
 		<a href="https://masalex8.wordpress.com" title="masalex8 website">visit masalex8</a>
 		<a href="https://github.com/masalex-willock/" title="masalex8 website">masalex8 github</a>
-		<small>Copyright &copy;, 2021 Masalex8; All rights reserved.</small>
+		<p><a href="./pages/terms.html">Privacy policy</a><a href="">Terms and conditions</a></p>
+		<small>Copyright &copy;, 2021 Masalex8 <br>All rights reserved.</small>
 	</footer>
 </body>
 </html>
