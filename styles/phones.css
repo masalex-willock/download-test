@@ -28,43 +28,45 @@ header nav{
   position: absolute; right: 1rem; top: 1.2rem; cursor: pointer;
 }
 
-.humb{
-  width: 2.2rem; height: .2rem; background: #000; position: relative; top: 2rem;
+header nav ul{
+  background: rgb(168, 168, 168);
+  padding: .8rem 2.4rem;
+  border-top: 2px solid gray;
 }
 
-  .humb::before, .humb::after{
+.humb{
+  transform: translateY(1.5rem);
+  padding-left: .4rem;
+  width: 3rem; height: 2.2rem;
+
+}
+
+.humb>span{
+  display: block;
+  width: 2.2rem; height: .2rem;
+  background: #000; top: 2rem;
+  position: absolute;
+  top: 50%;
+}
+
+  .humb>span::before, .humb>span::after{
     content: ''; position: absolute;
     width: 2rem; height: .2rem; background: inherit;
   }
 
-  .humb::before{
+  .humb>span::before{
     top: .6rem;
   }
 
-  .humb::after{
+  .humb>span::after{
     top: -0.6rem;
   }
 
-header nav ul a{
-  color: #d4d4d4;font-size: 1.5rem; display: inline-block;padding: .4rem;
+
+
+header img, nav img{
+  height: auto; width: 22%;
 }
-header nav ul{color: #747474;
-  position: absolute; right: 0; top: 3.2rem; background: #000; min-width: 320px; text-align: center; padding: 1rem 2rem;
-  display: none;
-}
-
-/* header nav:hover ul{
-  display: block;
-} */
-
-
-header img{
-  height: auto; width: 32%;
-}
-
-  header ul{
-    list-style: none;
-  }
 
 .hero h3{
   padding-top: 2rem;
@@ -78,19 +80,25 @@ img{
   max-height: 100%; max-width: 100%;
 }
 
-.file{
-  width: 90%; margin: auto;
-}
-
-
-.file+.file{
-  margin-top: .4rem;
-}
 
 
 
 @media  screen and (max-width:325px) {
-  .file div:first-of-type{
+  /* .file div:first-of-type{
     flex-direction: column;
+  } */
+
+  .song{
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
   }
+
+  .song .btn[href]{
+    padding: 0 !important; margin: 0 !important;
+    height: 30px !important; width: 30px !important;
+    border: none; font-weight: bold;
+  }
+
+
 }

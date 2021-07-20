@@ -1,34 +1,42 @@
 /* THE MAIN AREAS */
 *{
   padding: 0; margin: 0; box-sizing: border-box;
-  font: 1.1rem/1.6 Franklin, Helvetica, sans-serif;
+  font: 1.1rem/1.6 Quicksand, Helvetica, sans-serif;
 }
 
 body{
   background: #d4d4d4;
 }
 
+::selection{
+  background: orangered;
+}
+
 /* MAIN TAGS */
 header{
-  
+  position: relative;
+  display: flex;
 }
 
-main{
-
-}
 
 footer{
   padding-top: 2rem;
 }
 
+h1,h2,h3{
+  font-family: Rockwell, serif;
+  font-weight: bold;
+  margin: .4rem .2rem;
+}
+
 h1{
-  font: bold 1.5rem Rockwell;margin: .4rem .2rem;
+  font-size: 1.5rem;
 }
 h2{
-  font: bold 1.4rem Rockwell;margin: .4rem .2rem;
+  font-size: 1.4rem;
 }
 h3{
-  font: bold 1.3rem Rockwell;margin: .4rem .2rem;
+  font-size: 1.3rem;
 }
 
 p{
@@ -72,6 +80,7 @@ button.btn2{
   background-color: unset; color: #021db9;
 }
 
+
 /* media */
 audio{
   max-width: 90%; margin: auto;
@@ -79,32 +88,101 @@ audio{
 
 
 /* classes global */
-.file{
-  background-color: rgb(153, 149, 149);
-  padding: .8rem .4rem; text-align: center;
-  display: flex; flex-flow: column nowrap; justify-content: center;
-}
 
-.file>*+*{
-  padding: .2rem 0;
-}
-
-.file small{
-  color: rgb(80, 80, 80); font-size: medium;
-  /* flex: 1 0 auto; */
-}
-
-.file>div:first-of-type{
-  display: flex; justify-content: space-between;
-  padding: 0 2rem;
-}
-
-.file>div:first-of-type>span:first-of-type{
-  color: rgb(53, 53, 53);
-}
 
 /* other classes */
+.asong{
+  max-width: 300px;
+
+  padding: 1rem; background: rgb(221, 197, 197);
+  border-radius: .2rem;
+}
+
+.asong>p, .asong span{
+  font-family: 'Giddyup Std';
+  padding: 0; margin: 0;
+}
+
+.asong span{
+  color: rgb(82, 82, 82);
+}
+
+.song{
+  background-color: rgb(224, 194, 180);
+  max-width: 250px;
+  padding: .4rem .8rem;
+
+  margin-left: .4rem;
+}
+
+.song+.song{
+  margin-top: .4rem;
+}
+
 .artist .file button{
   min-width: 200px; max-width: 80%;
   margin: .2rem auto;
 }
+
+.btn{
+  padding: .4rem 4rem; border-radius: 24px;
+  color: orangered; background-color: transparent;
+  display: inline-block;
+  border: solid currentColor 1px;
+}
+
+.btn-outline2{
+  color: rgb(0, 119, 128);
+}
+
+.btn.small{
+  border-radius: 0; padding: .2rem .8rem;
+}
+
+.btn.round-b{
+  border-radius: 20px;
+}
+
+.btn.circle{
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  padding: .4rem;
+}
+
+
+
+/* the menu area */
+nav.menu>ul{
+  position: absolute; top: 4.8rem;
+  right: -0.8rem;
+  display: none;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav ul ul{
+  position: absolute;
+  padding-right: .4rem;
+  left: -6rem; top: 4rem;
+  border-top: none;
+  border-right: solid 2px gray;
+  display: none;
+}
+
+nav ul ul:after{
+  content: '';
+  position: absolute;
+  right: -.7rem;
+  top: 6.4%;
+
+  width: 0; height: 0;
+  border: 8px solid transparent;
+  border-left: solid gray;
+}
+
+
+/* temporry classes, to be named properly after testing */
+
