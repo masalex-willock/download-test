@@ -563,6 +563,6 @@ function htmlStr(arr){
 }
 
 function clicked(){
-  alert("dude you pocked me")
+  
 }
 
